@@ -3,7 +3,7 @@ import cv2 as cv
 import sys
 
 #Take an image
-img = cv.imread("emma_myers.png")
+img = cv.imread("face-recognition/emma_myers.png")
 
 #If image is empty, close the program
 if img is None:
@@ -15,4 +15,4 @@ cv.imshow('Showing image',img)
 quit = cv.waitKey(0)
 
 if quit == ord('q'):
-    cv.imwrite("emma_myers.png", img)
+    cv.imwrite("face-recognition/emma_myers.png", img)
